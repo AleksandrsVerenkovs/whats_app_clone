@@ -6,9 +6,9 @@ App has base functionality - can create chat rooms and write messages in set roo
 
 ## Built with:
 
-- React
-- MaterialUI
-- Firebase
+- [React](https://reactjs.org/)
+- [MaterialUI](https://mui.com/)
+- [Firebase](https://firebase.google.com/)
 
 ## Getting started
 
@@ -24,6 +24,7 @@ const firebaseConfig = {ENTER YOUR CONFIG}
 ```
 
 ## Firebase database schema
+![alt text](https://github.com/AleksandrsVerenkovs/whats_app_clone/blob/main/Firebase_database_schema.png)
 
 
 
