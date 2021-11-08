@@ -1,0 +1,72 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid lightgray;
+  flex: 0.35;
+}
+.sidebar__header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+}
+
+.sidebar__headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 10vw;
+}
+
+.sidebar__headerRight > .MuiSvgIcon-root {
+  margin-right: 2vw;
+  font-size: 24px !important;
+}
+
+.sidebar__search {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  height: 35px;
+  padding: 10px;
+}
+
+.sidebar__container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 25px;
+  border-radius: 20px;
+}
+
+.sidebar__container > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.sidebar__input,.sidebar::selection {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+}
+
+
+.sidebar__chats {
+  flex: 1;
+  background-color: white;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, .1);
+}

@@ -1,0 +1,169 @@
+.chat {
+  flex: 0.65;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__header {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  height: 12vh;
+}
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.chat__headerInfo > h3 {
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.chat__headerInfo > p {
+  margin-bottom: 3px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.chat__headerRight {
+  display: flex;
+  justify-content: space-between;
+  min-width: 80px;
+
+}
+
+.chat__headerRight > .MuiSvgIcon-root {
+  margin-right: 1vw;
+  color: gray !important;
+}
+
+.chat__body {
+  flex: 1;
+  position: relative;
+  padding: 30px;
+  overflow: scroll;
+}
+
+.chat__body::before {
+  content: "";
+  position: absolute;
+  background-image: url("https://theabbie.github.io/blog/assets/official-whatsapp-background-image.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.1;
+}
+
+.chat__message {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  padding: 5px 20px 20px 10px;  
+  background-color: white;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 5px;
+}
+
+.chat__message::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 12px solid transparent;
+  border-top: 15px solid white;
+  left: -10px;
+  top: 0px;
+}
+
+.chat__messageRadius {
+  border-top-left-radius: 0;
+}
+
+.chat__messageSender {
+  font-weight: 500;
+  font-size: 15px;
+  color: #35cd96;
+}
+.chat__messageTimestamp {
+  position: absolute;
+  bottom: 4px;
+  right: 10%;
+  font-size: 10px;
+  margin-left: 10px;
+  font-size: x-small;
+  color: gray;
+}
+
+.chat__receiver{
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
+.chat__receiverRadius {
+  border-top-right-radius: 0;
+}
+.chat__receiver::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-right: 12px solid transparent;
+  border-top: 15px solid #dcf8c6;
+  left: 93px;
+  top: 0px;
+}
+
+.chat__attachIcon {
+  transform: rotate(45deg);
+}
+
+.chat__footer {
+  height: 10vh;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+  align-items: center;
+}
+
+.chat__footerIcons {
+  display: flex;
+  justify-content: space-between;
+}
+.chat__inputContainer {
+  background-color: white;
+  flex: 1;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+
+.chat__inputContainer button {
+  display: none;
+}
+
+.chat__input,.chat__input::selection {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, .1);
+}
