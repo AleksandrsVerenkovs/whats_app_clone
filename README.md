@@ -2,6 +2,8 @@
 
 This is simple WhatsApp clone, which uses Google authorization for logging in.
 
+![auth](https://github.com/AleksandrsVerenkovs/whats_app_clone/blob/main/auth.gif?v=4&s=200)
+
 App has base functionality - can create chat rooms and write messages in set rooms.
 
 ## Built with:
