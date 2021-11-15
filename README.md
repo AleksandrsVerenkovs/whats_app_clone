@@ -1,6 +1,6 @@
 # Getting Started WhatsAppClone
 
-This is simple WhatsApp clone, which uses Google authorization for loggin.
+This is simple WhatsApp clone, which uses Google authorization for logging in.
 
 App has base functionality - can create chat rooms and write messages in set rooms.
 
